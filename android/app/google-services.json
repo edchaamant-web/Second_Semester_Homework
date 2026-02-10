@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "79823418051",
+    "project_id": "studyproject-f42ad",
+    "storage_bucket": "studyproject-f42ad.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79823418051:android:82c0bc2dc0de3d56af6876",
+        "android_client_info": {
+          "package_name": "com.example.firebase_homework"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7VoneUxB72ArfkTKMRh1D1eHrh8nkB4o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
