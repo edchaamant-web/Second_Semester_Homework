@@ -28,7 +28,6 @@ class SqlManager {
       checkStatus INTEGER DEFAULT 0
     )
   ''');
-    print('================== secssfule ==================');
   }
 
   Future<int> insertNote(String note) async {
@@ -45,6 +44,17 @@ class SqlManager {
     return await mydb!.update(
       'notes',
       {'checkStatus': checkStatus}, // تحديث check فقط
+      where: 'id = ?',
+      whereArgs: [id],
+    );
+  }
+
+  Future<int> updateNote(int id, String newValue) async {
+    final mydb = await db;
+
+    return await mydb!.update(
+      'notes',
+      {'note': newValue}, // تحديث check فقط
       where: 'id = ?',
       whereArgs: [id],
     );

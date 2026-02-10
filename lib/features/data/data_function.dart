@@ -26,4 +26,9 @@ class DataFunction {
     await sql.updateCheck(note.id, newValue);
     await refreshNotes();
   }
+
+  Future<void> updateNote(AppData note, String newValue) async {
+    await sql.updateNote(note.id, newValue);
+    await refreshNotes();
+  }
 }
